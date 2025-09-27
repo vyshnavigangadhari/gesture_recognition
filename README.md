@@ -26,6 +26,7 @@ This project uses **OpenCV** and **MediaPipe** to detect and recognize basic han
 
    
 2.Create and activate a virtual environment (optional but recommended):
+   ```bash
 conda create -n gesture python=3.11 -y
 conda activate gesture
 
