@@ -1,68 +1,39 @@
-🖐️ Hand Gesture Recognition
+# 🖐️ Hand Gesture Recognition  
 
-This project uses OpenCV and MediaPipe to detect and recognize basic hand gestures in real time via webcam.
+This project uses **OpenCV** and **MediaPipe** to detect and recognize basic hand gestures in real time via webcam.  
 
-✨ Features
+---
 
-Detects and tracks hands using MediaPipe Hands
+## ✨ Features
+- Detects and tracks hands using **MediaPipe Hands**  
+- Recognizes gestures:
+  - 👍 Thumbs Up  
+  - 👎 Thumbs Down  
+  - ✋ Open Palm  
+  - ✊ Fist  
+  - ✌ Peace Sign  
+  - 👉 Pointing  
+- Real-time display with landmarks and gesture labels  
 
-Recognizes gestures:
+---
 
-👍 Thumbs Up
+## 🛠️ Installation  
 
-👎 Thumbs Down
+1. Clone this repository:  
+   ```bash
+   git clone https://github.com/vyshnavigangadhari/gesture_recognition.git
+   cd gesture_recognition
 
-✋ Open Palm
-
-✊ Fist
-
-✌ Peace Sign
-
-👉 Pointing
-
-Real-time display with landmarks and gesture labels
-
-🛠️ Installation
-
-Clone this repository:
-
-git clone https://github.com/vyshnavigangadhari/gesture_recognition.git
-cd gesture_recognition
-
-
-Create and activate a virtual environment (optional but recommended):
-
+   
+2.Create and activate a virtual environment (optional but recommended):
 conda create -n gesture python=3.11 -y
 conda activate gesture
 
 
-Install dependencies:
-
-pip install opencv-python opencv-contrib-python mediapipe numpy
-
-
-If mediapipe fails with pip, use:
-
+3.Install dependencies:
+pip install -r requirements.txt
+###If mediapipe fails with pip, use:
 conda install -c conda-forge mediapipe
 
-▶️ Usage
-
-Run the script:
-
+##Usage
 python gesture_recognition.py
-
-
-Press ESC to exit the webcam window.
-
-📷 Example Gestures
-
-✋ Open Palm → “Open Palm”
-
-👍 Thumbs Up → “Thumbs Up”
-
-✊ Fist → “Fist”
-
-📂 Project Structure
-gesture_recognition/
-│── gesture_recognition.py   # Main script
-│── README.md                # Documentation
